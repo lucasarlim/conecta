@@ -1,4 +1,4 @@
-const THEME = {
+export const THEME = {
 	brand_900: '#192436',
 	brand_800: '#2A3C57',
 	brand_700: '#3D5578',

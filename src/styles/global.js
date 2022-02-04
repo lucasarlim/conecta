@@ -7,6 +7,23 @@ export default createGlobalStyle`
     box-sizing: border-box;
     outline: 0;
     font-family: 'Montserrat', sans-serif;
-    overflow: hidden
+    overflow: visible;
+    font-size: 16px;
+
+    @media (max-width: 2560px) {
+      font-size: 32px;
+    }
+
+    @media (max-width: 1440px){
+      font-size: 16px;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 14px;
+    }
+
+    @media (max-width: 320px) {
+      font-size: 12px;
+    }
   }
 `

@@ -1,11 +1,22 @@
 import React from 'react'
-import { Routes as Switch, Route } from 'react-router-dom';
-import { Home } from '../pages/Home'
+import {
+  Route,
+  BrowserRouter,
+  Routes as RoutesContainer,
+} from 'react-router-dom';
+
+import { Contato } from '../pages/Contato';
+import { Home } from '../pages/Home';
+import { Sobre } from '../pages/Sobre';
 
 export function Routes(){
   return (
-    <Switch>
-        <Route path='/' exact components={Home}/>
-    </Switch>
+    <BrowserRouter>
+      <RoutesContainer>
+        <Route element={<Home />} exact path="/" />
+        <Route element={<Contato />} path="/contato"/>
+        <Route element={<Sobre />} path="/sobre"/>
+      </RoutesContainer>
+    </BrowserRouter>
   )
 }

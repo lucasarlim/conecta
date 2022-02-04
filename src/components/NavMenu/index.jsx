@@ -1,22 +1,21 @@
 import React from 'react'
-import { Container, Main, OptionsMenu, PageName} from './style'
+import { Image, Navbar, NavLink, OptionsMenu} from './style'
 import logo from './../../assets/brand/blackLogo.png';
 import { PrimaryButton } from '../PrimaryButton';
 
 export function NavMenu(){
   return(
-    <Container>
-      <Main>
-        <img src={logo} alt="Contect@ - Terapia Online"/>
+    <Navbar className="navbar navbar-light">
+      
+      <Image src={logo} alt="Contect@ - Terapia Online"/>
+   
+      <OptionsMenu>  
+        <NavLink to="/">Home</NavLink>
+        <NavLink to="/sobre">Sobre nós</NavLink>
+        <NavLink to="/contato">Contato</NavLink>
+      </OptionsMenu>
 
-        <OptionsMenu>  
-          <PageName>Home</PageName>
-          <PageName>Sobre nós</PageName>
-          <PageName>Contato</PageName>
-        </OptionsMenu>
-
-        <PrimaryButton label="Cadastre-se"/>
-      </Main>
-    </Container>
+      <PrimaryButton label="Cadastre-se"/>
+    </Navbar>
   )
 }
