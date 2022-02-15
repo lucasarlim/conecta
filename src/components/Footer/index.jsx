@@ -18,10 +18,10 @@ export function Footer() {
         <Image src={logo} />
 
         <SocialWrapper>
-          <a href="https://instagram.com/conectaoficialbr?utm_medium=copy_link" target="_blank">
+          <a href="https://instagram.com/conectaoficialbr?utm_medium=copy_link" rel="noreferrer" target="_blank">
             <FiInstagram size="2rem" color="#515D6E" cursor="pointer"/>
           </a>
-          <a href="https://www.linkedin.com/company/conectaoficalbr" target="_blank">
+          <a href="https://www.linkedin.com/company/conectaoficalbr" rel="noreferrer" target="_blank">
             <FiLinkedin size="2rem" color="#515D6E" cursor="pointer"/>
           </a>
         </SocialWrapper>
