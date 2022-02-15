@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { useTheme } from "../../styles/themes";
 
-export const Container = styled.button`
+export const Container = styled.a`
   display: flex;
   align-items: center;
   justify-content: center;

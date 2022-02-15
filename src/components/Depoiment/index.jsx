@@ -1,23 +1,25 @@
-import { Container, DepoimentWrapper, Image, InfoDepoiment, Name, Text } from "./style";
-import logo from "./../../assets/brand/blackLogo.png";
-import client from "./../../assets/images/client.png";
-import { NavButton } from "../NavButton";
+import {
+  Container,
+  DepoimentWrapper,
+  Image,
+  InfoDepoiment,
+  Menssage,
+  Name,
+} from "./style";
 
-export function Depoiment() {
+export function Depoiment({photo, name, message, occupation}) {
   return (
     <Container>
-      <Image src={client} width="50%" height="100%" />
+      <Image src={photo} width="30%" height="auto" />
       <DepoimentWrapper>
-        <Image src={logo} width="108px" height="2.5rem" />
         <InfoDepoiment>
-          <Text>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis morbi
-            id sed viverra turpis et diam, velit. Pharetra, sem porta urna,
-            curabitur. Neque ipsum tellus sed consectetur rutrum.
-          </Text>
-          <Name>Cooper, Kristin</Name>
+          <Menssage>
+            {message}
+          </Menssage>
+          <Name>
+            {name} – {occupation}
+          </Name>
         </InfoDepoiment>
-        <NavButton />
       </DepoimentWrapper>
     </Container>
   );

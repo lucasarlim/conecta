@@ -5,7 +5,7 @@ export function CardServices({label, image}){
   return(
     <Container>
       <ImageWrapper>
-        <Image src={image}/>
+        {<Image src={image}/>}
       </ImageWrapper>
       <Label>{label}</Label>
     </Container>

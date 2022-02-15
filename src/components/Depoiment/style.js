@@ -2,23 +2,24 @@ import styled from "styled-components";
 import { useTheme } from "../../styles/themes";
 
 export const Container = styled.div`
-width: 100%;
-height: auto;
+  width: 100%;
+  height: auto;
 
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: center;
-grid-gap: 56px;
-background-color: ${useTheme.background}
-flex-wrap: wrap;
-
-@media (max-width: 768px) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   justify-content: center;
-}
+  grid-gap: 56px;
+  background-color: ${useTheme.background}
+  flex-wrap: wrap;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
 `;
 
 export const DepoimentWrapper = styled.div`
+  width: 100%;
   display: flex;
   flex-direction: column;
   grid-gap: 2rem;
@@ -26,6 +27,7 @@ export const DepoimentWrapper = styled.div`
 
 export const InfoDepoiment = styled.div`
   width: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
   grid-gap: 2rem;
@@ -39,12 +41,15 @@ export const Name = styled.p`
   color: ${useTheme.title};
 `;
 
-export const Text = styled.p`
+export const Menssage = styled.p`
   width: 100%;
+  height: auto;
   margin: 0;
   font-size: 1rem;
   color: ${useTheme.captionText};
-  line-height: 140%;
+  line-height: 150%;
+  font-weight: light;
+  font-style: italic;
 `;
 
 export const Image = styled.img`
@@ -53,4 +58,6 @@ export const Image = styled.img`
   @media (max-width: 768px) {
     display: none;
   }
+
+  border-radius: 8px;
 `;

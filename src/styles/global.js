@@ -9,6 +9,11 @@ export default createGlobalStyle`
     font-family: 'Montserrat', sans-serif;
     overflow: visible;
     font-size: 16px;
+    scroll-behavior: smooth;
+
+    *, input, button, p{
+      margin: 0;
+    }
 
     @media (max-width: 2560px) {
       font-size: 32px;

@@ -9,12 +9,13 @@ export const Content = styled.div`
   background-color: ${useTheme.brand_500};
   padding: 3.5rem;
   margin: 0 auto;
+  margin-top: 4.5rem;
   border-radius: 8px;
 
   margin-bottom: -3%;
   z-index: 1;
 
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   grid-gap: 1rem;
   flex-wrap: wrap;

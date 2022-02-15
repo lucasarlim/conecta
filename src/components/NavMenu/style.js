@@ -1,13 +1,12 @@
 import styled from "styled-components";
 import { useTheme } from "../../styles/themes";
-import { Link } from 'react-router-dom';
 
-export const Navbar = styled.div`
+export const Navbar = styled.nav`
   display: flex;
   width: 100%;
   padding: 24px 108px;
   flex-wrap: wrap;
-  grid-gap: 32px;
+  grid-gap: 2rem;
   align-items: center;
 
   @media (max-width: 768px) {
@@ -26,16 +25,15 @@ export const OptionsMenu = styled.div`
   grid-gap: 24px;
 `
 
-export const NavLink = styled(Link)`
-
+export const NavLink = styled.a`
   font-size: 1.125rem;
   font-weight: medium;
   color: #707070;
   cursor: pointer;
-  transition: 1s ease-out;
+  transition: 0.8s ease-out;
 
   &:hover {
     text-decoration: none;
-    color: ${useTheme.brand_400};
+    color: ${useTheme.brand_500};
 	}
 `

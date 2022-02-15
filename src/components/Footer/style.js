@@ -57,20 +57,16 @@ export const Label = styled.h5`
   color: ${useTheme.primaryText}
 `
 
-export const Subtitle = styled.p`
-  width: 100%;
-  font-size: 1.125rem;
-  color: ${useTheme.captionText};
-  margin: 0;
-`
-
-export const LinkPage = styled.p`
+export const LinkPage = styled.a`
   font-size: 1.125rem;
   color: ${useTheme.captionText};
   margin: 0;
   cursor: pointer;
+  transition: 0.8s ease-out;
+  text-decoration: none;
 
   &:hover {
-    color: ${useTheme.brand_400}
+    text-decoration: none;
+    color: ${useTheme.brand_500}
   }
 `

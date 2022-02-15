@@ -10,9 +10,9 @@ export function NavMenu(){
       <Image src={logo} alt="Contect@ - Terapia Online"/>
    
       <OptionsMenu>  
-        <NavLink to="/">Home</NavLink>
-        <NavLink to="/sobre">Sobre nós</NavLink>
-        <NavLink to="/contato">Contato</NavLink>
+        <NavLink href="#">Inicio</NavLink>
+        <NavLink href="#sobre">Sobre nós</NavLink>
+        <NavLink href="#contato">Contato</NavLink>
       </OptionsMenu>
 
       <PrimaryButton label="Cadastre-se"/>

@@ -62,7 +62,7 @@ export const Content = styled.div`
 export const Wrapper = styled.div`
   width: 100%;
   height: auto;
-  
+
   display: flex;
   flex-direction: row;
   padding: 3.5rem 0rem;
@@ -75,23 +75,6 @@ export const Wrapper = styled.div`
   }
 `;
 
-export const ContentCardBenefits = styled.div`
-  width: 100%;
-  height: auto;
-
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: center;
-  background-color: ${useTheme.background}
-  flex-wrap: wrap;
-  margin: 56px 0px;
-
-  @media (max-width: 768px) {
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-`;
 
 export const HeaderContent = styled.div`
   width: 100%;
@@ -99,10 +82,10 @@ export const HeaderContent = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-`
+`;
 
 export const InfoWrapper = styled.div`
-  width: 50%;
+  width: auto;
   display: flex;
   flex-direction: column;
   grid-gap: 1rem;
@@ -112,17 +95,6 @@ export const InfoWrapper = styled.div`
   }
 `;
 
-export const SectionDepoiment = styled.div`
-  display: flex;
-  flex-direction: column;
-  grid-gap: 56px;
-  padding: 2.5rem 5.75rem;
-  border-radius: 0.5rem;
-  background-color: ${useTheme.background};
-  margin: 4.5rem 0rem;
-  align-items: center;
-  justify-content: center;
-`;
 
 export const SectionServices = styled.div`
   width: 100%;
@@ -130,13 +102,17 @@ export const SectionServices = styled.div`
   display: flex;
   flex-direction: column;
   grid-gap: 1.5rem;
-  margin-bottom:120px;
-`
+  margin-bottom: 120px;
+`;
 
-export const DepoimentWrapper = styled.div`
+export const ContentAbout = styled.div`
+  width: 100%;
+  height: auto;
+
   display: flex;
   flex-direction: column;
-  grid-gap: 2rem;
+  align-items: flex-start;
+  grid-gap: 1.5rem;
 `;
 
 export const ContentServices = styled.div`
@@ -152,7 +128,7 @@ export const ContentServices = styled.div`
   @media (max-width: 768px) {
     justify-content: center;
     flex-wrap: wrap;
-`
+`;
 
 export const TitleContent = styled.h1`
   font-size: 1.5rem;
@@ -175,17 +151,6 @@ export const Text = styled.p`
   line-height: 140%;
 `;
 
-export const Divider = styled.div`
-  display: flex;
-  width: 2px;
-  height: 200px;
-  background-color: ${useTheme.divider};
-
-  @media (max-width: 768px) {
-    display: none;
-  }
-`;
-
 export const Image = styled.img`
   max-width: ${({ width }) => width};
   height: ${({ height }) => height};
@@ -193,5 +158,3 @@ export const Image = styled.img`
     display: none;
   }
 `;
-
-

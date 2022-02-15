@@ -3,7 +3,7 @@ import { Container, Label } from './style'
 
 export function PrimaryButton({label}){
   return(
-    <Container>
+    <Container href="#message">
       <Label>{label}</Label>
     </Container>
   )
