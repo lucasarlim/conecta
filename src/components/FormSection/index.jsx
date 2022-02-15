@@ -41,7 +41,6 @@ function FormSection() {
             <label>Nome</label>
             <input
               type="text"
-              autoFocus
               className="form-control"
               required
               placeholder="Nome"

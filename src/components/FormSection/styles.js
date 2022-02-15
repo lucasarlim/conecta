@@ -2,15 +2,15 @@ import styled from "styled-components";
 import { useTheme } from "../../styles/themes";
 
 export const Container = styled.div`
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-    align-items: center;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
 
-    width: 100%;
-    height: auto;
-    margin: 2.25rem 0rem;
+  width: 100%;
+  height: auto;
+  margin: 2.25rem 0rem;
 `
 
 export const TitleContent = styled.h1`
