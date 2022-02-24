@@ -10,7 +10,7 @@ import {
 export function Depoiment({photo, name, message, occupation}) {
   return (
     <Container>
-      <Image src={photo} width="30%" height="auto" />
+      <Image src={photo} />
       <DepoimentWrapper>
         <InfoDepoiment>
           <Menssage>

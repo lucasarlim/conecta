@@ -10,11 +10,12 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   grid-gap: 56px;
-  background-color: ${useTheme.background}
-  flex-wrap: wrap;
+  background-color: ${useTheme.background};
+  flex-wrap: no-wrap;
 
   @media (max-width: 768px) {
     justify-content: center;
+    flex-wrap: wrap;
   }
 `;
 
@@ -53,10 +54,11 @@ export const Menssage = styled.p`
 `;
 
 export const Image = styled.img`
-  max-width: ${({ width }) => width};
-  height: ${({ height }) => height};
-  @media (max-width: 768px) {
-    display: none;
+  width: 30%;
+  height: auto;
+
+  @media (max-width: 425px) {
+    width: 100%;
   }
 
   border-radius: 8px;
