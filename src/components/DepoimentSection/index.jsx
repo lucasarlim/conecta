@@ -14,7 +14,7 @@ export function DepoimentSection() {
 
   return (
     <Container>
-      <Title>O que nós motiva ?</Title>
+      <Title>O que nos motiva ?</Title>
       <Carousel prevLabel="" nextLabel="" activeIndex={index} onSelect={handleSelect}>
         <CarouselItem> 
           <Depoiment
