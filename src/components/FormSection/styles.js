@@ -11,6 +11,10 @@ export const Container = styled.div`
   width: 100%;
   height: auto;
   margin: 2.25rem 0rem;
+
+  > form > span {
+    color: red;
+  }
 `
 
 export const TitleContent = styled.h1`

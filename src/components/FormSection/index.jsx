@@ -38,7 +38,7 @@ function FormSection() {
       <form onSubmit={sendEmail}>
         <div className="row pt-5 mx-auto">
           <div className="col-lg-12 col-sm-12 form-group mx-auto">
-            <label>Nome</label>
+            <label>Nome <span style={{color: 'red'}} >*</span></label>
             <input
               type="text"
               className="form-control"
@@ -48,7 +48,7 @@ function FormSection() {
             />
           </div>
           <div className="col-lg-12 col-sm-12 form-group pt-1 mx-auto">
-            <label>Email</label>
+            <label>Email <span style={{color: 'red'}} >*</span></label>
             <input
               type="email"
               className="form-control"
@@ -70,7 +70,7 @@ function FormSection() {
           </div>
 
           <div className="col-lg-12 col-sm-12 form-group pt-1 mx-auto">
-            <label>Mensagem</label>
+            <label>Mensagem <span style={{color: 'red'}} >*</span></label>
             <textarea
               className="form-control"
               id=""
