@@ -37,7 +37,7 @@ function FormSection() {
 
       <form onSubmit={sendEmail}>
         <div className="row pt-5 mx-auto">
-          <div className="col-lg-8 col-sm-12 form-group mx-auto">
+          <div className="col-lg-12 col-sm-12 form-group mx-auto">
             <label>Nome</label>
             <input
               type="text"
@@ -47,7 +47,7 @@ function FormSection() {
               name="name"
             />
           </div>
-          <div className="col-lg-8 col-sm-12 form-group pt-1 mx-auto">
+          <div className="col-lg-12 col-sm-12 form-group pt-1 mx-auto">
             <label>Email</label>
             <input
               type="email"
@@ -58,7 +58,18 @@ function FormSection() {
             />
           </div>
 
-          <div className="col-lg-8 col-sm-12 form-group pt-1 mx-auto">
+          <div className="col-lg-12 col-sm-12 form-group pt-1 mx-auto">
+            <label>Linkedin</label>
+            <input
+              type="url"
+              className="form-control"
+              required
+              placeholder="Informe o endereço do seu linkedin"
+              name="linkedin"
+            />
+          </div>
+
+          <div className="col-lg-12 col-sm-12 form-group pt-1 mx-auto">
             <label>Mensagem</label>
             <textarea
               className="form-control"
@@ -70,11 +81,11 @@ function FormSection() {
               name="message"
             ></textarea>
           </div>
-          <div className="col-lg-8 col-sm-12 pt-3 mx-auto">
+          <div className="col-lg-12 col-sm-12 pt-3 mx-auto">
             <input
               type="submit"
               className="btn btn-primary w-100"
-              value="Me cadastrar"
+              value="Enviar"
             ></input>
           </div>
         </div>
