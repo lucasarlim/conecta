@@ -47,6 +47,7 @@ function FormSection() {
               name="name"
             />
           </div>
+
           <div className="col-lg-12 col-sm-12 form-group pt-1 mx-auto">
             <label>Email <span style={{color: 'red'}} >*</span></label>
             <input
@@ -59,6 +60,17 @@ function FormSection() {
           </div>
 
           <div className="col-lg-12 col-sm-12 form-group pt-1 mx-auto">
+            <label>Telefone<span style={{color: 'red'}} >*</span></label>
+            <input
+              type="tel"
+              className="form-control"
+              required
+              placeholder="Informe o seu telefone"
+              name="telefone"
+            />
+          </div>
+
+          <div className="col-lg-12 col-sm-12 form-group pt-1 mx-auto">
             <label>Linkedin</label>
             <input
               type="url"
@@ -66,6 +78,17 @@ function FormSection() {
               required
               placeholder="Informe o endereço do seu linkedin"
               name="linkedin"
+            />
+          </div>
+
+          <div className="col-lg-12 col-sm-12 form-group pt-1 mx-auto">
+            <label>Instagram</label>
+            <input
+              type="url"
+              className="form-control"
+              required
+              placeholder="Informe o endereço do seu linkedin"
+              name="instagram"
             />
           </div>
 

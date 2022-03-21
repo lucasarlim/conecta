@@ -18,7 +18,7 @@ export function ServicesSection() {
 
   return (
     <Container id="service">
-      <Title>Aréas da Psicoterapia</Title>
+      <Title>Segmentos da Psicoterapia</Title>
       <InfoContent>
         <Image src={woman} />
 
