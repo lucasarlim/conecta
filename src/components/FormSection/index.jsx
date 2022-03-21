@@ -87,7 +87,7 @@ function FormSection() {
               type="url"
               className="form-control"
               required
-              placeholder="Informe o endereço do seu linkedin"
+              placeholder="Informe o endereço do seu instagram"
               name="instagram"
             />
           </div>
